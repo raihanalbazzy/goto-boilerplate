@@ -1,4 +1,4 @@
-import primaryToken from "../../../../theme";
+import primaryToken from "../../../../../theme";
 import { ThemeConfig } from "antd";
 import { Inter } from "next/font/google";
 

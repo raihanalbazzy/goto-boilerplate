@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import TanstackProvider from "@/context/TanstackProvider";
+import TanstackProvider from "@/lib/Context/TanstackProvider";
 import { PropsWithChildren } from "react";
-import AntdProvider from "@/context/AntdProvider";
+import AntdProvider from "@/lib/Context/AntdProvider";
 import RootLayout from "@/components/RootLayout";
+import AuthProvider from "@/lib/Context/AuthProvider";
 
 export const metadata: Metadata = {
   title: "Goto",
@@ -16,7 +17,9 @@ export default function PageLayout({ children }: PropsWithChildren) {
       <body>
         <TanstackProvider>
           <AntdProvider>
-            <RootLayout>{children}</RootLayout>
+            <AuthProvider>
+              <RootLayout>{children}</RootLayout>
+            </AuthProvider>
           </AntdProvider>
         </TanstackProvider>
       </body>
