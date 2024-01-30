@@ -1,5 +1,13 @@
-import Home from "@/modules/Home/Lazy";
+import React from "react";
 
-export default function Page() {
-  return <Home />;
+import HomePageServer from "@/modules/home/components/HomePageServer";
+import HomePageClient from "@/modules/home/components/HomePageClient";
+
+export default function HomePage() {
+  return (
+    <>
+      <HomePageClient />
+      <HomePageServer />
+    </>
+  );
 }
