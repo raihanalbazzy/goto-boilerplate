@@ -1,6 +1,6 @@
-import primaryToken from "../../../../../theme";
-import { ThemeConfig } from "antd";
+import type { ThemeConfig } from "antd";
 import { Inter } from "next/font/google";
+import primaryToken from "../../../../../theme";
 
 const font = Inter({ subsets: ["latin"] });
 

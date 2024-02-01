@@ -1,4 +1,5 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
+import type { NextAuthOptions } from "next-auth";
+import NextAuth from "next-auth";
 
 export const authOptions: NextAuthOptions = {
   session: {

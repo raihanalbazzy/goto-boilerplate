@@ -1,11 +1,11 @@
+import type { PropsWithChildren } from "react";
 import type { Metadata } from "next";
-import "./globals.css";
-import TanstackProvider from "@/lib/Context/TanstackProvider";
-import { PropsWithChildren } from "react";
-import AntdProvider from "@/lib/Context/AntdProvider";
-import RootLayout from "@/components/RootLayout";
-import AuthProvider from "@/lib/Context/AuthProvider";
 import { getServerSession } from "next-auth";
+import RootLayout from "@/components/RootLayout";
+import AntdProvider from "@/lib/Context/AntdProvider";
+import AuthProvider from "@/lib/Context/AuthProvider";
+import TanstackProvider from "@/lib/Context/TanstackProvider";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Goto",

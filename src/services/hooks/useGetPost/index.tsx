@@ -1,6 +1,6 @@
 import { QueryClient, useQuery } from "@tanstack/react-query";
 import { GET_POST_QUERY_KEY } from "./models/constant";
-import { Post } from "./models/types";
+import type { Post } from "./models/types";
 
 export const getPost = (): Promise<Post> =>
   fetch("https://jsonplaceholder.typicode.com/todos/1")

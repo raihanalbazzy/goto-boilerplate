@@ -1,8 +1,8 @@
+import React from "react";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
-import React, { PropsWithChildren } from "react";
-import { AntdProviderType } from "./models/types";
 import { antdTheme } from "./models/theme";
+import type { AntdProviderType } from "./models/types";
 
 const AntdProvider: AntdProviderType = ({ children }) => {
   return (
